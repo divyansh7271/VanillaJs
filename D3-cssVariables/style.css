@@ -1,0 +1,40 @@
+/* Define Variables at the root level so their scope is the entire document */
+
+:root {
+    --base: #f3ff99;       /*Defined using --var */
+    --blur: 10px;                 
+    --padding: 10px;
+}
+
+/* Set image property using previously defined variables */
+
+img {
+     
+    box-sizing: border-box;
+    background: var(--base);
+    filter: blur(var(--blur));
+    padding: var(--padding);
+    border-radius: 2rem;
+    margin-top: 40px;
+}
+
+.hl {
+    color: var(--base);
+}
+
+body {
+    text-align: center;
+    background: #76857a;
+    color: white;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.controls {
+     margin-bottom: 40px;
+}
+
+input {
+    width: 100px;
+}
